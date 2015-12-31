@@ -1,4 +1,5 @@
 title: Spring Validation BindingResult/Errors always return false
+date: 2015-11-27 08:49:00
 tags: spring
 categories: spring
 ---

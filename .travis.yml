@@ -30,9 +30,8 @@ before_script:
 - sed -i'' "s~git@github.com:haozl/haozl.github.io.git~https://${GH_TOKEN}:x-oauth-basic@github.com/haozl/haozl.github.io.git~" _config.yml
 
 script:
-- cat _config.yml
 - hexo generate
-- hexo deploy
+- hexo deploy --silent
 
 env:
   global:
