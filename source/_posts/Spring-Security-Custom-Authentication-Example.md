@@ -64,7 +64,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 }
 ```
 
-### 3. 实现AuthenticationProvider： CustomAuthenticationProvider.java
+### 2. 实现AuthenticationProvider： CustomAuthenticationProvider.java
 ```java
 @Service
 public class CustomAuthenticationProvider implements AuthenticationProvider {
@@ -95,7 +95,7 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
 }
 ```
 
-### 4. 实现UserDetailsService： AuthenticationService
+### 3. 实现UserDetailsService： AuthenticationService
 ```java
 @Service
 public class AuthenticationService implements UserDetailsService {
@@ -115,7 +115,7 @@ public class AuthenticationService implements UserDetailsService {
 }
 ```
 
-### 5. Database Schema
+### 4. Database Schema
 ```sql
 DROP TABLE users IF EXISTS;
 CREATE TABLE users (
@@ -139,7 +139,7 @@ CREATE TABLE user_roles (
 
 ```
 
-### 6. UserDAOImpl.java
+### 5. UserDAOImpl.java
 ```java
 public class UserDAOImpl implements UserDAO {
 
